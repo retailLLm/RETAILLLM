@@ -18,9 +18,10 @@
 
 // export default App;
 
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import UserDashboardPage from './pages/UserDashboardPage';
@@ -29,16 +30,18 @@ import MartOwnerDashboardPage from './pages/MartOwnerDashboardPage';
 
 const App = () => {
   return (
-    <Router>
-    
+    <>
+  <Navbar/>
+      <Router>
         <Routes>
-        <Route path="/" exact component={Home} />
-         <Route path="/login" component={Login} />      <Route path="/user-dashboard" component={UserDashboardPage} />
-<Route path="/salesperson-dashboard" component={SalespersonDashboardPage} />
-       <Route path="/martowner-dashboard" component={MartOwnerDashboardPage} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/user-dashboard" element={<UserDashboardPage />} />
+          <Route path="/salesperson-dashboard" element={<SalespersonDashboardPage />} />
+          <Route path="/martowner-dashboard" element={<MartOwnerDashboardPage />} />
         </Routes>
-  
-    </Router>
+      </Router>
+      </>
   );
 }
 

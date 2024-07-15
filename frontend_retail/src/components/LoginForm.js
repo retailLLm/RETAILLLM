@@ -7,7 +7,7 @@ function LoginForm() {
     password: '',
     role: 'user', // default role
   });
-  const NuseNavigate = useNavigate();
+  const NAvuseNavigate = useNavigate();
 
   const handleChange = (e) => {
     setCredentials({
@@ -20,11 +20,11 @@ function LoginForm() {
     e.preventDefault();
     // Add authentication logic here
     if (credentials.role === 'user') {
-      NuseNavigate.push('/user-dashboard');
+      NAvuseNavigate.push('/user-dashboard');
     } else if (credentials.role === 'salesperson') {
-      NuseNavigate.push('/salesperson-dashboard');
+      NAvuseNavigate.push('/salesperson-dashboard');
     } else if (credentials.role === 'martowner') {
-      NuseNavigate.push('/martowner-dashboard');
+      NAvuseNavigate.push('/martowner-dashboard');
     }
   };
 

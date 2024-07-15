@@ -1,13 +1,20 @@
 import React from 'react';
 
-function UserDashboard() {
+import SearchBar from './SearchComponent';
+import './UserDashboard.css';
+
+const Dashboard = () => {
   return (
-    <div className="user-dashboard">
-      <h2>Welcome to your Dashboard</h2>
-      <p>Here are your personalized product recommendations and search capabilities.</p>
-      {/* Add components or logic for recommendations and search */}
+    <div className="dashboard-container">
+   
+      <main className="main-content">
+        <SearchBar />
+        <div className="additional-content">
+          {/* Additional content and components */}
+        </div>
+      </main>
     </div>
   );
-}
+};
 
-export default UserDashboard;
+export default Dashboard;

@@ -1,13 +1,27 @@
 import React from 'react';
 
-function MartOwnerDashboard() {
+import SearchBar from './SearchComponent';
+import AnalysisSection from './AnalysisSection';
+import "./AnalysisSection.css"
+function App() {
   return (
-    <div className="martowner-dashboard">
-      <h2>Mart Owner Dashboard</h2>
-      <p>View branch performance summary and financial analysis tools.</p>
-      {/* Add components or logic for financial analysis */}
+    <div className="App">
+    
+    <header className="header">
+      <h1>Sales Analysis Dashboard</h1>
+    </header>
+      <SearchBar />
+      <div className="analysis-container">
+        <AnalysisSection title="Over Time Sales" />
+        <AnalysisSection title="Seasonal Trends" />
+        <AnalysisSection title="Best Performance" />
+        <AnalysisSection title="Worst Performance" />
+        <AnalysisSection title="Average Daily Sales" />
+        <AnalysisSection title="Sales Distribution" />
+        <AnalysisSection title="Christmas Season Sales" />
+      </div>
     </div>
   );
 }
 
-export default MartOwnerDashboard;
+export default App;

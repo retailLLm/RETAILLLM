@@ -1,0 +1,104 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  
+  .logo {
+    height: 36px;
+    width: 36px;
+  }
+  
+  .explore-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2D2D;
+  }
+  
+  .designers-link {
+    text-decoration: none;
+  }
+  
+  .designers-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D2D2D;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sign-in-btn, .sign-up-btn {
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'DM Mono', monospace;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .sign-in-btn {
+    background-color: #EFEFEF;
+    color: black;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .sign-up-btn {
+    background-color: black;
+    color: white;
+  }
+  
+  .sign-up-btn:hover {
+    background-color: #333333;
+  }
+  
+  .menu-btn {
+    display: none; /* Hide the menu button by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    height: 24px;
+    width: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .designers-link {
+      display: none; /* Hide the designers link on small screens */
+    }
+  
+    .sign-in-btn, .sign-up-btn {
+      display: none; /* Hide the sign in and sign up buttons on small screens */
+    }
+  
+    .menu-btn {
+      display: block; /* Show the menu button on small screens */
+    }
+  }
+  
