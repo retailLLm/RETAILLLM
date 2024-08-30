@@ -1,0 +1,5 @@
+streamlit
+pymysql
+langchain
+langchain_community
+dotenv
