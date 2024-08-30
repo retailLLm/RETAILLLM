@@ -27,6 +27,7 @@ import Login from './pages/Login';
 import UserDashboardPage from './pages/UserDashboardPage';
 import SalespersonDashboardPage from './pages/SalespersonDashboardPage';
 import MartOwnerDashboardPage from './pages/MartOwnerDashboardPage';
+import ProductAvailability from './components/ProductAvailability';
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/user-dashboard" element={<UserDashboardPage />} />
           <Route path="/salesperson-dashboard" element={<SalespersonDashboardPage />} />
           <Route path="/martowner-dashboard" element={<MartOwnerDashboardPage />} />
+          <Route path="/productAvailability" element={< ProductAvailability/>} />
         </Routes>
       </Router>
       </>

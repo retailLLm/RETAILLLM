@@ -7,15 +7,15 @@ const Navbar = () => {
       <div className="nav-left">
         <a href="/" className="logo-link">
          
-          <span className="explore-text">Explore</span>
+          <span className="explore-text">Home</span>
         </a>
-        <a href="/" className="logo-link">
+        <a href="/search" className="logo-link">
          
-          <span className="explore-text">Explore</span>
+          <span className="explore-text">Search</span>
         </a>
-        <a href="/" className="logo-link">
+        <a href="/productAvailability" className="logo-link">
         
-          <span className="explore-text">Explore</span>
+          <span className="explore-text">Product Availability</span>
         </a>
 
       </div>

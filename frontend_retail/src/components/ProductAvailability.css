@@ -1,0 +1,95 @@
+/* ProductAvailability.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.root {
+    background-color: #e0f7fa; /* Light blue background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle pattern background */
+    font-family: 'Poppins', sans-serif;
+}
+
+.paper {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.95); /* White paper background with transparency */
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #00796b; /* Dark teal color */
+    font-weight: 600;
+}
+
+.chatBox {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #b2ebf2; /* Light blue border */
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1); /* Inset shadow */
+}
+
+.chatMessage {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.chatMessage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.salespersonMessage {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.botMessage {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.textField {
+    background-color: white; /* White text field */
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: #00796b; /* Dark teal button */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
