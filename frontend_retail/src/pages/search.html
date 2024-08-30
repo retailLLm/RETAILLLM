@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Query</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input[type="text"] { width: 300px; padding: 10px; margin-right: 10px; }
+        button { padding: 10px 20px; }
+        #result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Ask About a Product</h1>
+    <input type="text" id="queryInput" placeholder="Enter your product query">
+    <button onclick="submitQuery()">Submit</button>
+
+    <div id="result"></div>
+
+    <script>
+        function submitQuery() {
+            const query = document.getElementById('queryInput').value;
+            const resultDiv = document.getElementById('result');
+
+            fetch('https://e873-34-125-229-52.ngrok-free.app/query', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ query: query }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultDiv.innerHTML = `<h3>Result:</h3><p>${data.reply}</p>`;
+            })
+            .catch(error => {
+                resultDiv.innerHTML = `<p style="color: red;">Error: ${error}</p>`;
+            });
+        }
+    </script>
+
+</body>
+</html>
